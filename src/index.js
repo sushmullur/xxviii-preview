@@ -24,6 +24,21 @@ const tracks = [
     title: "IV. It's Just Me",
     tags: ["hyper-pop"],
   },
+  {
+    url: "https://xxviiibucket.s3.us-west-2.amazonaws.com/VII+Keep+Beatin+ft+Galaxy+Meka.wav", 
+    title: "VII. Keep Beatin ft. Galaxy Meka",
+    tags: ["rap"],
+  },
+  {
+    url: "https://xxviiibucket.s3.us-west-2.amazonaws.com/XI+Don't+You+Give+Up+ft+Ajay.wav",
+    title: "XI. Don't You Give Up ft. Ajay Sandhu",
+    tags: ["narration"],
+  },
+  {
+    url: "https://xxviiibucket.s3.us-west-2.amazonaws.com/XIV+Outro.wav",
+    title: "XIV. Outro",
+    tags: ["instrumental"],
+  },
 ];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

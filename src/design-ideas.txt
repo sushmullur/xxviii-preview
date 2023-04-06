@@ -1,0 +1,10 @@
+
+Background: #18191f
+Progress left: #151616
+Placeholder and Playlist test: #575a77
+Tags and Sliders: #9440f3
+Tags hover: #2cc0a0
+Other text and Progress used: #000000
+
+Track title, search placeholder value, active playlist items use Quicksand font.
+Inactive playlist items use Poppins font. 

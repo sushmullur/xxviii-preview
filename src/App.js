@@ -17,7 +17,6 @@ import { Play } from "./components/Play";
 import { Pause } from "./components/Pause";
 import { Next } from "./components/Next";
 import { Shuffle } from "./components/Shuffle";
-import { Volume } from "./components/Volume";
 import { PlaylistTemplate } from "./components/PlaylistTemplate";
 import { PlaylistItem } from "./components/PlaylistItem";
 import { AlbumTitle } from "./components/AlbumTitle";
@@ -224,12 +223,6 @@ export const Player = ({ trackList }) => {
               onClick={shuffle}
             />
           </ButtonsBox>
-          <Volume
-            value={volume}
-            onChange={(e) => {
-              setVolume(e.target.value / 100);
-            }}
-          />
         </ButtonsAndVolumeBox>
       </PlayerTemplate>
       <TagsTemplate>

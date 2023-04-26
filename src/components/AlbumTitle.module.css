@@ -1,7 +1,9 @@
 .wrapper {
+    margin-top: 10px;
     color: var(--titleColor);
-    font-size: 28px;
+    font-size: 40px;
     text-align: center;
+    text-emphasis: bold;
   }
   
   @media only screen and (max-width: 600px) {

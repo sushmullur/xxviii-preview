@@ -13,21 +13,21 @@ body {
 }
 
 :root {
-  --tagsBackground: #9440f3;
+  --tagsBackground: #E11B22;
   --tagsText: #ffffff;
-  --tagsBackgroundHoverActive: #2cc0a0;
-  --tagsTextHoverActive: #ffffff;
+  --tagsBackgroundHoverActive: #ffd000;
+  --tagsTextHoverActive: #000000;
   --searchBackground: #18191f;
   --searchText: #ffffff;
   --searchPlaceHolder: #575a77;
   --playerBackground: #18191f;
   --titleColor: #ffffff;
   --timeColor: #ffffff;
-  --progressSlider: #9440f3;
-  --progressUsed: #ffffff;
+  --progressSlider: #E11B22;
+  --progressUsed: #ffd000;
   --progressLeft: #151616;
-  --volumeSlider: #9440f3;
-  --volumeUsed: #ffffff;
+  --volumeSlider: #E11B22;
+  --volumeUsed: #ffd000;
   --volumeLeft:  #151616;
   --playlistBackground: #18191f;
   --playlistText: #575a77;

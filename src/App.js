@@ -20,6 +20,7 @@ import { Shuffle } from "./components/Shuffle";
 import { Volume } from "./components/Volume";
 import { PlaylistTemplate } from "./components/PlaylistTemplate";
 import { PlaylistItem } from "./components/PlaylistItem";
+import { AlbumTitle } from "./components/AlbumTitle";
 
 import loopCurrentBtn from "./icons/loop_current.png";
 import loopNoneBtn from "./icons/loop_none.png";
@@ -184,20 +185,7 @@ export const Player = ({ trackList }) => {
 
   return (
     <PageTemplate>
-      <TagsTemplate>
-        {tags.map((tag, index) => {
-          return (
-            <TagItem
-              key={index}
-              status={
-                filter.length !== 0 && filter.includes(tag) ? "active" : ""
-              }
-              tag={tag}
-              onClick={tagClickHandler}
-            />
-          );
-        })}
-      </TagsTemplate>
+      <AlbumTitle/>
       <Search
         value={query}
         onChange={(e) => updateQuery(e.target.value.toLowerCase())}
@@ -244,6 +232,20 @@ export const Player = ({ trackList }) => {
           />
         </ButtonsAndVolumeBox>
       </PlayerTemplate>
+      <TagsTemplate>
+        {tags.map((tag, index) => {
+          return (
+            <TagItem
+              key={index}
+              status={
+                filter.length !== 0 && filter.includes(tag) ? "active" : ""
+              }
+              tag={tag}
+              onClick={tagClickHandler}
+            />
+          );
+        })}
+      </TagsTemplate>
       <PlaylistTemplate>
         {trackList
           .sort((a, b) => (a.title > b.title ? 1 : -1))

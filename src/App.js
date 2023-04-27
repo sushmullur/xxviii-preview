@@ -11,12 +11,10 @@ import { Time } from "./components/Time";
 import { Progress } from "./components/Progress";
 import { ButtonsAndVolumeBox } from "./components/ButtonsAndVolumeBox";
 import { ButtonsBox } from "./components/ButtonsBox";
-import { Loop } from "./components/Loop";
 import { Previous } from "./components/Previous";
 import { Play } from "./components/Play";
 import { Pause } from "./components/Pause";
 import { Next } from "./components/Next";
-import { Shuffle } from "./components/Shuffle";
 import { PlaylistTemplate } from "./components/PlaylistTemplate";
 import { PlaylistItem } from "./components/PlaylistItem";
 import { AlbumTitle } from "./components/AlbumTitle";
@@ -210,7 +208,6 @@ export const Player = ({ trackList }) => {
         />
         <ButtonsAndVolumeBox>
           <ButtonsBox>
-            <Loop src={looped ? loopCurrentBtn : loopNoneBtn} onClick={loop} />
             <Previous src={previousBtn} onClick={previous} />
             {isPlaying ? (
               <Pause src={pauseBtn} onClick={pause} />
@@ -218,10 +215,6 @@ export const Player = ({ trackList }) => {
               <Play src={playBtn} onClick={play} />
             )}
             <Next src={nextBtn} onClick={next} />
-            <Shuffle
-              src={shuffled ? shuffleAllBtn : shuffleNoneBtn}
-              onClick={shuffle}
-            />
           </ButtonsBox>
         </ButtonsAndVolumeBox>
       </PlayerTemplate>

@@ -4,6 +4,7 @@
     background-color: var(--playerBackground);
     overflow: auto;
     font-family: 'Quicksand', sans-serif;
+    
   }
   
   @media only screen and (max-width: 600px) {
